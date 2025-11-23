@@ -51,7 +51,7 @@ const Contact: React.FC = () => {
           'Accept': 'application/json'
         },
         body: JSON.stringify({
-          access_key: 'b8f7c8d9-4e3a-4b2c-9d1e-5f6a7b8c9d0e', // Temporary key - replace with your own
+          access_key: '8acaff68-d872-4387-b65c-320953213686', // User provided key
           name: formData.name,
           email: formData.email,
           message: formData.message,
