@@ -5,6 +5,18 @@ import { SKILLS_CHART_DATA, CERTIFICATIONS } from '../constants';
 import { Award, CheckCircle } from 'lucide-react';
 
 const Skills: React.FC = () => {
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   return (
     <section id="skills" className="py-24 bg-transparent relative overflow-hidden">
       {/* Background Decor */}
@@ -28,9 +40,12 @@ const Skills: React.FC = () => {
 
               <div className="h-[400px] w-full bg-fintech-800/50 backdrop-blur-md rounded-3xl border border-gray-800 p-4">
                 <ResponsiveContainer width="100%" height="100%">
-                  <RadarChart cx="50%" cy="50%" outerRadius="70%" data={SKILLS_CHART_DATA}>
+                  <RadarChart cx="50%" cy="50%" outerRadius={isMobile ? "60%" : "70%"} data={SKILLS_CHART_DATA}>
                     <PolarGrid stroke="#374151" />
-                    <PolarAngleAxis dataKey="subject" tick={{ fill: '#9ca3af', fontSize: 12 }} />
+                    <PolarAngleAxis
+                      dataKey="subject"
+                      tick={{ fill: '#9ca3af', fontSize: isMobile ? 10 : 12 }}
+                    />
                     <PolarRadiusAxis angle={30} domain={[0, 100]} tick={false} axisLine={false} />
                     <Radar
                       name="Skill Level"
