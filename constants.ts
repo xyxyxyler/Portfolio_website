@@ -93,7 +93,7 @@ export const SKILLS_CHART_DATA: SkillData[] = [
 ];
 
 export const CERTIFICATIONS: Certification[] = [
-  { name: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate" },
+  { name: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate 1Z0-1122-25" },
   { name: "ISO/IEC 27001:2022 – ISMS FOUNDATION" },
   { name: "Professional Diploma in Digital Products Management – MTF" },
   { name: "Professional Diploma in Digitalization of Retail Banking – MTF" },
