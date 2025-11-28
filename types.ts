@@ -26,3 +26,15 @@ export interface Certification {
   name: string;
   issuer?: string;
 }
+
+export interface Project {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  tags: string[];
+  links: {
+    demo?: string;
+    github?: string;
+  };
+}

@@ -1,4 +1,4 @@
-import { Job, Education, SkillData, Certification } from './types';
+import { Job, Education, SkillData, Certification, Project } from './types';
 import { Briefcase, Code, Database, Layout, TrendingUp, Cpu, ShieldCheck } from 'lucide-react';
 
 export const HERO_DATA = {
@@ -109,3 +109,16 @@ export const SERVICE_ICONS = {
   Security: ShieldCheck,
   Business: Briefcase
 };
+
+export const PROJECTS_DATA: Project[] = [
+  {
+    id: 'trava',
+    title: 'Trava - Custom Hotel Booking Platform',
+    description: 'A custom-branded hotel booking platform developed using Nuitée’s white-label API. Delivers a seamless OTA experience with destination search, real-time availability, and dynamic pricing.',
+    image: '/projects/trava.png',
+    tags: ['React', 'White-label API', 'Travel Tech', 'Fintech Integration'],
+    links: {
+      demo: 'https://trava.nuitee.link/?language=en&currency=USD',
+    }
+  }
+];
