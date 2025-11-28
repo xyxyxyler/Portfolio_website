@@ -37,7 +37,7 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({ project, i
                 <h3 className="text-xl font-bold text-white mb-2 group-hover:text-fintech-accent transition-colors">
                     {project.title}
                 </h3>
-                <p className="text-gray-400 mb-6 line-clamp-3">
+                <p className="text-gray-400 mb-6">
                     {project.description}
                 </p>
 

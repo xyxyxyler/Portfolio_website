@@ -116,7 +116,7 @@ export const PROJECTS_DATA: Project[] = [
     title: 'Trava - Custom Hotel Booking Platform',
     description: 'A custom-branded hotel booking platform developed using Nuitée’s white-label API. Delivers a seamless OTA experience with destination search, real-time availability, and dynamic pricing.',
     image: '/projects/trava.png',
-    tags: ['React', 'White-label API', 'Travel Tech', 'Fintech Integration'],
+    tags: ['React', 'White-label API', 'Travel Tech', 'Integration'],
     links: {
       demo: 'https://trava.nuitee.link/?language=en&currency=USD',
     }
